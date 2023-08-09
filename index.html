@@ -1,0 +1,34 @@
+/><script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+<h1> Photo Filters </h1>
+
+<p>
+  <canvas id= "theCanvas">
+  </canvas>
+</p>
+
+<p> <h2>Upload Your Picture</h2>
+  
+</p>
+
+<p>
+  <input type="file", multiple="false", accept = "image/*", id="fileInput", onchange = "loadImage()"/>
+</p>
+
+<p> <h2>Choose Your Filter</h2> 
+</p>
+
+<p>
+  <input type="button", value= "grayscale", onclick = "doGray()"/>
+  <input type="button", value= "Red", onclick = "doRed()"/>
+  <input type="button", value= "Blue", onclick = "doBlue()"/>
+  <input type="button", value= "Green", onclick = "doGreen()"/>
+  <input type="button", value= "Rainbow", onclick = "doRainbow()"/>
+  <input type="button" value="Add Watermark" onclick="addWatermark()" />
+  <input type="button", value= "Confetti", onclick = "addConfetti()"/>
+  <input type="button" value= "Blur" onclick="makeBlur()"/>
+</p>
+
+<p>
+  <input type= "button", value= "Reset Image", onclick= "reset()"/>
+  <input type= "button", value = "Save Image", onclick = "saveImage()"/>

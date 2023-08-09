@@ -1,0 +1,27 @@
+canvas {
+  border: 1px solid gray;
+}
+
+h1 {
+  font-family: berthold;
+  font-size: 24pt;
+  text-decoration: underline;
+  color: rgb(182, 208, 226);
+  
+}
+
+h2 {
+  color: rgb(182, 208, 226);
+  font-size: 18pt;
+}
+
+body {
+  background-color: #01257D;
+  margin: 30pt;
+  opacity: 0.8;
+}
+
+input{
+  background-color: #F9B872;
+  font-size: 16pt;
+}
