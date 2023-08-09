@@ -1,34 +1,77 @@
-<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
-</script>
-<h1> Photo Filters </h1>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Photo Filter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<p>
-  <canvas id= "theCanvas">
-  </canvas>
-</p>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<p> <h2>Upload Your Picture</h2>
-  
-</p>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/julius-drost-dS-q7-zkD9c-unsplash.jpg" alt="" /></span>
+						<h1>Photo Filter</h1>
+						<p>app built by <a href="https://www.linkedin.com/in/andrew-witt-0a7366237/">Andrew Witt</a></p>
+					</header>
 
-<p>
-  <input type="file", multiple="false", accept = "image/*", id="fileInput", onchange = "loadImage()"/>
-</p>
+				
+				<!-- Main -->
+					<div id="main">
 
-<p> <h2>Choose Your Filter</h2> 
-</p>
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Upload your pictures</h2>
+										</header>
+										<p><canvas id= "theCanvas">
+										</canvas></p>
+										<p>
+											<input type="file" multiple="false" accept = "image/*" id="fileInput" onchange = "loadImage()"/>
+										  </p>
+										  <p> <h2>Choose Your Filter</h2> 
+										  </p>
+										  
+										  <p>
+											<input type="button" value= "Grayscale" onclick = "doGray()"/>
+											<input type="button" value= "Red" onclick = "doRed()"/>
+											<input type="button" value= "Blue" onclick = "doBlue()"/>
+											<input type="button" value= "Green" onclick = "doGreen()"/>
+											<input type="button" value= "Rainbow" onclick = "doRainbow()"/>
+											<input type="button" value="Add Watermark" onclick="addWatermark()" />
+											<input type="button" value= "Confetti" onclick = "addConfetti()"/>
+											<input type="button" value= "Blur" onclick="makeBlur()"/>
+										  </p>
+										  <p>
+											<input type= "button" value= "Reset Image" onclick= "reset()"/>
+											<input type= "button" value = "Save Image" onclick = "saveImage()"/>
+										
+							</section>
 
-<p>
-  <input type="button", value= "grayscale", onclick = "doGray()"/>
-  <input type="button", value= "Red", onclick = "doRed()"/>
-  <input type="button", value= "Blue", onclick = "doBlue()"/>
-  <input type="button", value= "Green", onclick = "doGreen()"/>
-  <input type="button", value= "Rainbow", onclick = "doRainbow()"/>
-  <input type="button" value="Add Watermark" onclick="addWatermark()" />
-  <input type="button", value= "Confetti", onclick = "addConfetti()"/>
-  <input type="button" value= "Blur" onclick="makeBlur()"/>
-</p>
+						
 
-<p>
-  <input type= "button", value= "Reset Image", onclick= "reset()"/>
-  <input type= "button", value = "Save Image", onclick = "saveImage()"/>
+				
+							
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/script.js"></script>
+			<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+			</script>
+
+	</body>
+</html>
